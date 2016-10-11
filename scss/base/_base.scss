@@ -1,0 +1,299 @@
+/* ==========================================================================
+   Hyundai Fonts
+   ========================================================================== */
+@font-face {
+    font-family: 'hyundai_sans_headbold';
+    src: url('../fonts/hyundaisanshead-bold-webfont.woff2') format('woff2'),
+         url('../fonts/hyundaisanshead-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'hyundai_sans_headlight';
+    src: url('../fonts/hyundaisanshead-light-webfont.woff2') format('woff2'),
+         url('../fonts/hyundaisanshead-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'hyundai_sans_headmedium';
+    src: url('../fonts/hyundaisanshead-medium-webfont.woff2') format('woff2'),
+         url('../fonts/hyundaisanshead-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'hyundai_sans_headregular';
+    src: url('../fonts/hyundaisanshead-regular-webfont.woff2') format('woff2'),
+         url('../fonts/hyundaisanshead-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'hyundai_sans_textbold';
+    src: url('../fonts/hyundaisanstext-bold-webfont.woff2') format('woff2'),
+         url('../fonts/hyundaisanstext-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'hyundai_sans_textmedium';
+    src: url('../fonts/hyundaisanstext-medium-webfont.woff2') format('woff2'),
+         url('../fonts/hyundaisanstext-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'hyundai_sans_textregular';
+    src: url('../fonts/hyundaisanstext-regular-webfont.woff2') format('woff2'),
+         url('../fonts/hyundaisanstext-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ==========================================================================
+   Base Styles
+   ========================================================================== */
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+    overflow-x: hidden;
+    height: 100%;
+}
+html.no-overflow-y {
+    overflow-y: hidden;
+}
+
+/* TABLET SIZE */
+@media all and (min-width: 768px) {
+    
+    html {
+        overflow-y: hidden;
+    }
+}
+
+body {
+    font: 16px/1.5 'hyundai_sans_textregular', Helvetica, sans-serif;
+    background-color: #fff;
+    color: #222222;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+img {
+    max-width: 100%;
+}
+
+::-moz-selection {
+    background: $selection-color;
+    text-shadow: none;
+}
+
+::selection {
+    background: $selection-color;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Scrollbar
+   ========================================================================== */
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #b6b6b6;
+  border: 2px solid #a9a9a9;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #bebebe;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #b5b5b5;
+}
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border: 0px none #ffffff;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #f0f0f0;
+}
+::-webkit-scrollbar-track:active {
+  background: #f0f0f0;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+a.link {color: $link-color;}
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* ==========================================================================
+   Base Layout
+   ========================================================================== */
+
+.container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+
+    &:before,
+    &:after {
+        content: " ";
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+.no-margin-top {
+    margin-top: 0 !important;
+}
+
+.no-margin-right {
+    margin-right: 0 !important;
+}
+
+.no-margin-bottom {
+    margin-bottom: 0 !important;
+}
+
+.no-margin-left {
+    margin-left: 0 !important;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+.no-padding-top {
+    padding-top: 0 !important;
+}
+
+.no-padding-right {
+    padding-right: 0 !important;
+}
+
+.no-padding-bottom {
+    padding-bottom: 0 !important;
+}
+
+.no-padding-left {
+    padding-left: 0 !important;
+}
+
+.text-align-center {
+    text-align: center;
+}

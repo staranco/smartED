@@ -1,0 +1,123 @@
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+
+.footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	z-index: 20;
+	background: $white;
+    border-top: 1px solid $light-grey;
+}
+
+.footer__container {
+    height: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.information__item {
+	display: inline-block;
+}
+
+.information__link {
+	display: block;
+	padding: 10px;
+	color: $medium-grey;
+	font-size: 1.3em;
+
+	.no-touch &:hover,
+	.no-touch &:active,
+	&:active {
+		display: block;
+		padding: 10px;
+		color: $dark-grey;
+		font-size: 1.3em;
+	}
+}
+
+.copyright {
+	font-size: .7em;
+	color: $medium-grey;
+	padding: 6px 10px;
+	float: left;
+}
+
+.company-name {
+	display: none;
+}
+
+.footer__container_left .information__list {
+	display: none;
+}
+
+.footer__container_right {
+	float: right;
+}
+
+.badges__list {
+	padding: 0;
+}
+
+.badges__item {
+	display: inline-block;
+}
+
+.badges__link {
+	display: block;
+	padding: 5px;
+}
+
+/* TABLET SIZE */
+@media all and (min-width: 768px) {
+
+.footer {
+	height: 65px;
+}
+
+.footer__container {
+	display: table;
+	width: 100%;
+}
+
+.footer__container_left {
+	float: left;
+	padding: 7px 0px;
+}
+
+.footer__container_right {
+	padding: 4px 0px;
+}
+
+.footer__container_left .information__list {
+	display: inline-block;
+}
+
+.copyright {
+	padding: 6px 10px 6px 30px;
+}
+
+.company-name {
+	display: inline-block;
+}
+
+.badges__list {
+	padding: 0 15px;
+}
+
+.badges__link {
+	padding: 10px;
+}
+
+}
+
+/* DESKTOP SIZE */
+@media all and (min-width: 1024px) {
+   
+}

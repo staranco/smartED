@@ -1,0 +1,37 @@
+/* ==========================================================================
+   Variables
+   ========================================================================== */
+
+// Descrptive color variables
+
+$white              : #fff;
+$white-transparent	: rgba(255, 255, 255, .6);
+$raw-white			: #f7f7f7;
+$black              : #000;
+$black-transparent	: rgba(0, 0, 0, .6);
+$light-grey			: #eee;
+$medium-grey		: #7d7d7d;
+$dark-grey			: #444;
+$light-blue			: #00b0d2;
+$dark-blue			: #043267;
+
+// Functional color variables
+
+$selection-color    : $light-grey;
+$hyundai-color		: $dark-blue;
+$link-color			: $light-blue;
+
+// Font Stacks
+
+$stack-sans-serif : 'hyundai_sans_textregular', Helvetica, sans-serif;
+$stack-hyundai-sans-head-bold : 'hyundai_sans_headbold', $stack-sans-serif;
+$stack-hyundai-sans-head-medium : 'hyundai_sans_headmedium', $stack-sans-serif;
+$stack-hyundai-sans-head-regular : 'hyundai_sans_headregular', $stack-sans-serif;
+$stack-hyundai-sans-head-light : 'hyundai_sans_headlight', $stack-sans-serif;
+$stack-hyundai-sans-text-bold : 'hyundai_sans_textbold', $stack-sans-serif;
+$stack-hyundai-sans-text-medium : 'hyundai_sans_textmedium', $stack-sans-serif;
+$stack-hyundai-sans-text-regular : 'hyundai_sans_textregular', $stack-sans-serif;
+
+$primal-fontstack : $stack-hyundai-sans-text-regular;
+$bold-fontstack : $stack-hyundai-sans-text-bold;
+$titles-fontstack : $stack-hyundai-sans-head-light;
