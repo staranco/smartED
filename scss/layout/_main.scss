@@ -2,43 +2,10 @@
    MAIN
    ========================================================================== */
 
-.overlay {
-	display: none;
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background: $black-transparent;
-    z-index: 1;
-}
-
-.main {
-	position: absolute;
-	top: 50px;
-	bottom: 50px;
-	left: 0;
-	right: 0;
-}
-
-.carousel {
-	width: 100%;
-	height: 100%;
-}
-
-.caroussel__item {
-	display: block;
-	width: 100%;
-	height: 100%;
-}
 
 /* TABLET SIZE */
 @media all and (min-width: 768px) {
 	
-	.main {
-		top: 65px;
-		bottom: 65px;
-	}
 }
 
 /* DESKTOP SIZE */
