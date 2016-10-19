@@ -1,54 +1,22 @@
 /* ==========================================================================
    Hyundai Fonts
    ========================================================================== */
-@font-face {
-    font-family: 'hyundai_sans_headbold';
-    src: url('../fonts/hyundaisanshead-bold-webfont.woff2') format('woff2'),
-         url('../fonts/hyundaisanshead-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+@font-face{
+    font-family: 'Avenir Next LT Regular';
+    src: url("../fonts/e9167238-3b3f-4813-a04a-a384394eed42.eot?#iefix");
+    src: url("../fonts/e9167238-3b3f-4813-a04a-a384394eed42.eot?#iefix") format("eot"),url("../fonts/1e9892c0-6927-4412-9874-1b82801ba47a.woff") format("woff"),url("../fonts/46cf1067-688d-4aab-b0f7-bd942af6efd8.ttf") format("truetype"),url("../fonts/52a192b1-bea5-4b48-879f-107f009b666f.svg#52a192b1-bea5-4b48-879f-107f009b666f") format("svg");
 }
-@font-face {
-    font-family: 'hyundai_sans_headlight';
-    src: url('../fonts/hyundaisanshead-light-webfont.woff2') format('woff2'),
-         url('../fonts/hyundaisanshead-light-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+
+@font-face{
+    font-family: 'Avenir Next LT Demi';
+    src: url("../fonts/12d643f2-3899-49d5-a85b-ff430f5fad15.eot?#iefix");
+    src: url("../fonts/12d643f2-3899-49d5-a85b-ff430f5fad15.eot?#iefix") format("eot"),url("../fonts/91b50bbb-9aa1-4d54-9159-ec6f19d14a7c.woff") format("woff"),url("../fonts/a0f4c2f9-8a42-4786-ad00-fce42b57b148.ttf") format("truetype"),url("../fonts/99affa9a-a5e9-4559-bd07-20cf0071852d.svg#99affa9a-a5e9-4559-bd07-20cf0071852d") format("svg");
 }
-@font-face {
-    font-family: 'hyundai_sans_headmedium';
-    src: url('../fonts/hyundaisanshead-medium-webfont.woff2') format('woff2'),
-         url('../fonts/hyundaisanshead-medium-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'hyundai_sans_headregular';
-    src: url('../fonts/hyundaisanshead-regular-webfont.woff2') format('woff2'),
-         url('../fonts/hyundaisanshead-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'hyundai_sans_textbold';
-    src: url('../fonts/hyundaisanstext-bold-webfont.woff2') format('woff2'),
-         url('../fonts/hyundaisanstext-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'hyundai_sans_textmedium';
-    src: url('../fonts/hyundaisanstext-medium-webfont.woff2') format('woff2'),
-         url('../fonts/hyundaisanstext-medium-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'hyundai_sans_textregular';
-    src: url('../fonts/hyundaisanstext-regular-webfont.woff2') format('woff2'),
-         url('../fonts/hyundaisanstext-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+
+@font-face{
+    font-family: 'Avenir Next LT Bold';
+    src: url("../fonts/dccb10af-07a2-404c-bfc7-7750e2716bc1.eot?#iefix");
+    src: url("../fonts/dccb10af-07a2-404c-bfc7-7750e2716bc1.eot?#iefix") format("eot"),url("../fonts/b8e906a1-f5e8-4bf1-8e80-82c646ca4d5f.woff") format("woff"),url("../fonts/890bd988-5306-43ff-bd4b-922bc5ebdeb4.ttf") format("truetype"),url("../fonts/ed104d8c-7f39-4e8b-90a9-4076be06b857.svg#ed104d8c-7f39-4e8b-90a9-4076be06b857") format("svg");
 }
 
 /* ==========================================================================
@@ -67,20 +35,9 @@ html {
     overflow-x: hidden;
     height: 100%;
 }
-html.no-overflow-y {
-    overflow-y: hidden;
-}
-
-/* TABLET SIZE */
-@media all and (min-width: 768px) {
-    
-    html {
-        overflow-y: hidden;
-    }
-}
 
 body {
-    font: 16px/1.5 'hyundai_sans_textregular', Helvetica, sans-serif;
+    font: 16px/1.5 $primal-fontstack;
     background-color: #fff;
     color: #222222;
     font-weight: 300;
@@ -137,42 +94,9 @@ textarea {
     padding: 0.2em 0;
 }
 
-/* ==========================================================================
-   Scrollbar
-   ========================================================================== */
-
-::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
-::-webkit-scrollbar-button {
-  width: 0px;
-  height: 0px;
-}
-::-webkit-scrollbar-thumb {
-  background: #b6b6b6;
-  border: 2px solid #a9a9a9;
-  border-radius: 0px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #bebebe;
-}
-::-webkit-scrollbar-thumb:active {
-  background: #b5b5b5;
-}
-::-webkit-scrollbar-track {
-  background: #f0f0f0;
-  border: 0px none #ffffff;
-  border-radius: 0px;
-}
-::-webkit-scrollbar-track:hover {
-  background: #f0f0f0;
-}
-::-webkit-scrollbar-track:active {
-  background: #f0f0f0;
-}
-::-webkit-scrollbar-corner {
-  background: transparent;
+.highlighted,
+.securitas-color {
+    color: $securitas-color;
 }
 
 /* ==========================================================================
@@ -183,8 +107,6 @@ a {
     text-decoration: none;
     outline: none;
 }
-
-a.link {color: $link-color;}
 
 /* ==========================================================================
    Lists
@@ -204,11 +126,57 @@ ul {
     position: relative;
     width: 100%;
     margin: 0 auto;
+    padding: 0 15px;
+}
+
+.row {
+    display: block;
+    width: 100%;
+    margin: 60px 0; 
+}
+
+.cell {
+    display: block;
+}
+
+.cell__valign_t {
+    vertical-align: top;
+}
+
+.cell__valign_m {
+    vertical-align: middle;
+}
+
+.cell__valign_b {
+    vertical-align: bottom;
+}
+
+/* TABLET SIZE */
+@media all and (min-width: 768px) {
+
+.container {
+    max-width: 1480px;
+    padding: 0 30px;
+}
+}
+
+
+
+/* DESKTOP SIZE */
+@media all and (min-width: 1024px) {
+  
+.cell {
+    display: table-cell;
+}
 }
 
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+
+.uppercase {
+    text-transform: uppercase;
+}
 
 .hidden {
     display: none !important;

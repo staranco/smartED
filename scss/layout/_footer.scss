@@ -2,15 +2,92 @@
    FOOTER
    ========================================================================== */
 
+.footer {
+	background: $raw-white;
+	border-top: 1px solid $light-grey;
+	height: 90px;
+}
 
+.footer__container {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
+.footer__text {
+	display: table-cell;
+	vertical-align: middle;
+	font-size: .8em;
+	color: $medium-grey;
+}
+
+.footer__link {
+	color: $medium-grey;
+	padding: 10px;
+	display: inline-block;
+}
+
+.footer__logo {
+	position: absolute;
+	background-image: url(../img/logo-securitas-footer.png);
+	width: 79px;
+	height: 50px;
+	background-size: 100%;
+	top: 50%;
+	margin-top: -25px;
+	right: 15px;
+	display: none;
+}
+
+.footer__logo a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+/* @2x Images */   
+@media only screen and (-o-min-device-pixel-ratio: 5/4),
+       only screen and (-webkit-min-device-pixel-ratio: 1.25),
+       only screen and (min-device-pixel-ratio: 1.25),
+       only screen and (min-resolution: 1.25dppx) {
+.footer__logo {
+	width: 79px;
+	height: 50px;
+	background-image: url(../img/logo-securitas-footer@2x.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+}
+
+/* @3x Images */
+@media only screen and (-o-min-device-pixel-ratio: 9/4),
+       only screen and (-webkit-min-device-pixel-ratio: 2.25),
+       only screen and (min-device-pixel-ratio: 2.25),
+       only screen and (min-resolution: 2.25dppx) {
+.footer__logo {
+	width: 79px;
+	height: 50px;
+	background-image: url(../img/logo-securitas-footer@3x.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+}
 
 /* TABLET SIZE */
 @media all and (min-width: 768px) {
 
-
+.footer__link {
+	padding: 20px;
+}
+.footer__logo {
+	display: inline-block;
+}
 }
 
 /* DESKTOP SIZE */
 @media all and (min-width: 1024px) {
-   
+
+.footer__logo {
+	right: 30px;
+} 
 }

@@ -1,0 +1,162 @@
+/* ==========================================================================
+   COURSES
+   ========================================================================== */
+
+.courses {
+	background-color: $light-grey;
+}
+
+.courses__container {
+	padding: 60px 15px;
+}
+
+.courses__title {
+	margin: 0;
+	padding: 0;
+}
+
+.courses__grid {
+	margin-bottom: 0;
+}
+
+.courses__item {
+	position: relative;
+	width: 100%;
+	float: left;
+	padding: 1px;
+}
+
+	.courses__item a {
+		color: inherit;
+	}
+
+.item__img {
+	position: relative;
+	overflow: hidden;
+}
+	
+	.item__time {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		z-index: 10;
+		color: $white;
+		font-size: .7em;
+		font-family: $bold-fontstack;
+		display: table;
+	}
+
+		.item__time_icon {
+			font-size: 1.5em;
+			line-height: 0;
+			display: table-cell;
+			vertical-align: middle;
+			padding-right: 5px;
+		}
+		
+		.item__time_text {
+			line-height: 0;
+			display: table-cell;
+			vertical-align: middle;
+		}
+
+	.item__control {
+		position: absolute;
+		color: $white;
+		top: 50%;
+		left: 50%;
+		z-index: 10;
+	}
+	
+		.item__control_reload {
+			font-size: 6em;
+			line-height: 0;
+			margin-top: -42px;
+			margin-left: -48px;
+		}
+
+		.item__control_play {
+			font-size: 6em;
+			line-height: 0;
+			margin-top: -48px;
+			margin-left: -24px;
+		}
+
+	.item__darkener {
+		position: absolute;
+		top:0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 2;
+		background: url(../img/darkener.png) repeat;
+	}
+	
+	.item__enabler {
+		position: absolute;
+		top:0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 20;
+		background: url(../img/lightener.png) repeat;
+	}
+
+	.item__img img {
+		width: 100%;
+		height: auto;
+
+		@include transform(scale(1));
+		@include transition(all ease-in-out .5s);
+	}
+	
+	.item__img:hover img {
+		@include transform(scale(1.05));
+	}
+
+.item__info {
+	background: $white;
+	padding: 30px;
+	position: relative;
+}
+
+.item__indicator {
+	position: absolute;
+}
+
+	.item__indicator_tick {
+	    top: 5px;
+	    right: 10px;
+		font-size: 3.5em;
+		line-height: 0;
+		color: $color-ok;
+	}
+
+.info__title {
+	font-family: $bold-fontstack;
+	font-size: 1.1em;
+	margin-top: 0;
+}
+
+.info__text {
+	margin-bottom: 0;
+}
+
+/* TABLET SIZE */
+@media all and (min-width: 768px) {
+.courses__item {
+	width: 50%;
+}
+}
+
+/* DESKTOP SIZE */
+@media all and (min-width: 1024px) {
+   
+.courses__container {
+	padding: 60px 30px;
+}
+
+.courses__item {
+	width: 33.333333333%;
+}
+}
