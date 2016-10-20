@@ -25,6 +25,11 @@
 	color: $medium-grey;
 	padding: 10px;
 	display: inline-block;
+	@include transition(.3s all ease-in-out);
+}
+
+.footer__link:hover {
+	color: $dark-grey;
 }
 
 .footer__logo {
@@ -79,6 +84,11 @@
 .footer__link {
 	padding: 20px;
 }
+
+.footer__link:first-of-type {
+	padding-left: 40px;
+}
+
 .footer__logo {
 	display: inline-block;
 }

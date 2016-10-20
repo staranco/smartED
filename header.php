@@ -33,7 +33,6 @@
                                 <span class="submenu__triangle"></span>
                                 <ul class="submenu__list">
                                     <li class="submenu__item"><a href="#" class="submenu__link"><strong>Jane Doe</strong>See Profile</a></li>
-                                    <li class="submenu__item"><a href="#" class="submenu__link"><strong>Manage Your account</strong></a></li>
                                     <li class="submenu__item"><a href="#" class="submenu__link"><strong>Exit</strong></a></li>
                                 </ul>
                             </div><!--end of submenu-->
@@ -47,10 +46,10 @@
                             </a>
                         </li><!--end of navigation__item-->
                         <li class="menu__item menu__item_home">
-                            <a href="#cookiesPolicy"  class="menu__link popup__link" title="Login">Log in</a>
+                            <a href="#formPopup"  class="menu__link popup__link" title="Login">Log in</a>
                         </li><!--end of navigation__item-->
                         <li class="menu__item menu__item_home">
-                            <a href="courses.php" class="menu__link" title="Registro">Register</a>
+                            <a href="#formPopup" class="menu__link popup__link" title="Registro">Register</a>
                         </li><!--end of navigation__item-->
                         <div class="overlay"></div><!--end of overlay-->
                     </ul><!--end of navigation__list-->

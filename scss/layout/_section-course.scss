@@ -7,7 +7,7 @@
 }
 
 .course__container {
-	padding: 60px 15px;
+	padding: 30px 15px;
 }
 
 .breadcrumbs {
@@ -201,10 +201,24 @@
 }
 
 .question__letter {
+	position: relative;
 	width: 30px;
 	height: 30px;
 	line-height: 25px;
-    padding: 0 5px;
+	font-family: $stack-avenir-demi;
+    font-size: 1.5em;
+	color: $medium-grey;
+	@include transition(all ease-in-out .5s);
+}
+
+.question__letter::before {
+	position: absolute;
+	top: -2px; 
+	left: -2px;
+	content: '';
+	line-height: 25px;
+	width: 100%;
+	height: 100%;
 	@include border-radius(100%);
 	font-family: $stack-avenir-demi;
     font-size: 1.5em;
@@ -213,7 +227,7 @@
 	@include transition(all ease-in-out .5s);
 }
 
-.questions__link:hover .question__letter {
+.questions__link:hover .question__letter::before {
 	color: $dark-grey;
 	border: 2px solid $dark-grey;
 	@include transition(all ease-in-out .5s);
@@ -221,12 +235,20 @@
 
 .questions__link.wrong .question__letter {
 	color: $red;
+	@include transition(all ease-in-out .5s);
+}
+
+.questions__link.wrong .question__letter::before {
 	border: 2px solid $red;
 	@include transition(all ease-in-out .5s);
 }
 
 .questions__link.correct .question__letter {
 	color: $green;
+	@include transition(all ease-in-out .5s);
+}
+
+.questions__link.correct .question__letter::before {
 	border: 2px solid $green;
 	@include transition(all ease-in-out .5s);
 }
@@ -263,7 +285,6 @@
 
 .question__letter {
 	line-height: 30px;
-    padding: 3px 10px;
 	display: table-cell;
 	vertical-align: middle;
 	text-align: center;
@@ -274,7 +295,7 @@
 @media all and (min-width: 1024px) {
    
 .course__container {
-	padding: 60px 30px;
+	padding: 30px;
 }
 
 }

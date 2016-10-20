@@ -118,57 +118,6 @@ ul {
     padding: 0;
 }
 
-/* ==========================================================================
-   Base Layout
-   ========================================================================== */
-
-.container {
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
-.row {
-    display: block;
-    width: 100%;
-    margin: 60px 0; 
-}
-
-.cell {
-    display: block;
-}
-
-.cell__valign_t {
-    vertical-align: top;
-}
-
-.cell__valign_m {
-    vertical-align: middle;
-}
-
-.cell__valign_b {
-    vertical-align: bottom;
-}
-
-/* TABLET SIZE */
-@media all and (min-width: 768px) {
-
-.container {
-    max-width: 1480px;
-    padding: 0 30px;
-}
-}
-
-
-
-/* DESKTOP SIZE */
-@media all and (min-width: 1024px) {
-  
-.cell {
-    display: table-cell;
-}
-}
 
 /* ==========================================================================
    Helper classes
