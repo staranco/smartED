@@ -10,10 +10,6 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
-        <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/owl.carousel.css">
-        <link rel="stylesheet" href="css/ionicons.min.css">
         <link rel="stylesheet" href="css/application.css">
 
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -51,10 +47,10 @@
                             </a>
                         </li><!--end of navigation__item-->
                         <li class="menu__item menu__item_home">
-                            <a href="courses.php" class="menu__link" title="Login">Log in</a>
+                            <a href="#cookiesPolicy"  class="menu__link popup__link" title="Login">Log in</a>
                         </li><!--end of navigation__item-->
                         <li class="menu__item menu__item_home">
-                            <a href="#" class="menu__link" title="Registro">Register</a>
+                            <a href="courses.php" class="menu__link" title="Registro">Register</a>
                         </li><!--end of navigation__item-->
                         <div class="overlay"></div><!--end of overlay-->
                     </ul><!--end of navigation__list-->

@@ -94,6 +94,27 @@ $(document).ready(function() {
 	  $( ".course__tabs .content__block#" + tabSelector ).addClass('active');
 	});
 
+	// Magnific Popup
+	$('.popup__link').magnificPopup({
+		type:'inline',
+		midClick: false,
+		removalDelay: 300,
+		fixedContentPos: true,
+   		fixedBgPos: true,
+		mainClass: 'mfp-fade'
+	});
+
+	/* Show or Hide tables with tabs nav on POPUP */
+	$( document ).on( "click", ".popup__tab a", function() {
+	  var tabSelector = $(this).attr('data-rel');
+
+	  $( ".popup__tab a" ).removeClass('active');
+	  $( this ).addClass('active');
+
+	  $( ".popup__content" ).removeClass('active');
+	  $( ".popup__content#" + tabSelector ).addClass('active');
+	});
+
 	// Get date 
 	getDateYear();
 });
