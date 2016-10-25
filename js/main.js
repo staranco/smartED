@@ -1,3 +1,5 @@
+"use strict";
+
 window.onload = function() {
   if(/iP(hone|ad)/.test(window.navigator.userAgent)) {
     document.body.addEventListener('touchstart', function() {}, false);
@@ -6,7 +8,8 @@ window.onload = function() {
 
 /* DOCUMENT READY */
 $(document).ready(function() {
-		
+	
+
     //Remove # from href
 	$( document ).on('click', 'a', function(event) {
 		var ahref = $(this).attr('href');
@@ -20,38 +23,42 @@ $(document).ready(function() {
 	    $('.equal-height').matchHeight();
 	});
 
-	// Sticky Menu
+	// Is home
 	if (!($('.banner').length))  {
 		$('.header').removeAttr("id","home");
 	} else {
 		$('.header').attr("id","home");
 	}
 
-	// Trigger submenu on hover
-	$('.no-touch .menu__item.user').hover(function() {
-		$('.submenu').toggleClass('active');
+	// Trigger submenu
+
+	$( document ).on( "click", '.menu__item_logged .menu__link', function() {
+		var menuSelector = $(this).attr('data-rel');
+
+		$('.main').addClass('displaced');
+		$('.sidearea').addClass('displaced');
+		$('.header').addClass('displaced');
+		$('.overlay').addClass('active');
+		$('html').addClass("blocked");
+
+	  	$( ".sidearea .sidearea__list" ).removeClass('active');
+	  	$( ".sidearea .sidearea__list#" + menuSelector ).addClass('active');
 	});
 
-	// Trigger submenu on mobile
-	if ($(window).width() <= 1025) {  
-        $( document ).on( "click", '.menu__item.user', function() {
-		  $('.main').addClass('active');
-		  $('.overlay').addClass('active');
-		});
-   	} 
-	$(window).resize(function(){
-       	if ($(window).width() <= 1025) {  
-            $( document ).on( "click", '.menu__item.user', function() {
-			  $('.main').addClass('active');
-			  $('.overlay').addClass('active');
-			});
-       	}     
-	});
-
-	$( document ).on( "click", '.overlay', function() {
-		$('.main').removeClass('active');
+	$( document ).on( "click touchstart", '.overlay, .sidearea__link_close', function() {
+		$('.main').removeClass('displaced');
+	  	$('.sidearea').removeClass('displaced');
+	  	$('.header').removeClass('displaced');
 		$('.overlay').removeClass('active');
+		$('html').removeClass("blocked");
 	});
+
+	// Dropzone 
+	Dropzone.options.myAwesomeDropzone = {
+		paramName: "file", // The name that will be used to transfer the file
+		maxFilesize: 2, // MB
+		previewTemplate: document.getElementById('dropzone__template').innerHTML
+	};
 
 	// Slider
 	$('.carousel').owlCarousel({
@@ -132,3 +139,6 @@ function getDateYear() {
     var year = d.getFullYear();
     document.getElementById("date").innerHTML = year.toString();
 }
+
+/* Iphone click events */
+

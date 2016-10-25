@@ -52,22 +52,31 @@
     
                         <ul class="questions__list">
                             <li class="questions__item">
-                                <a class="questions__link wrong active" href="#">
-                                    <span class="question__letter">A</span>
-                                    <p class="question__text">Lorem ipsum dolor sit amet, dolor dolor sit lorem?</p>
-                                </a>
+                                <div class="questions__link">
+                                    <input type="radio" name="mode" id="optionA" value="A" class="wrong">
+                                    <label for="optionA">
+                                        <span data-title="A"></span>
+                                        <p class="question__text">Lorem ipsum dolor sit amet, dolor dolor sit lorem?</p>
+                                    </label>
+                                </div>
                             </li>
                             <li class="questions__item">
-                                <a class="questions__link correct" href="#">
-                                    <span class="question__letter">B</span>
-                                    <p class="question__text">Lorem ipsum dolor sit amet, dolor dolor sit lorem?</p>
-                                </a>
+                                <div class="questions__link">
+                                    <input type="radio" name="mode" id="optionB" value="B" class="correct">
+                                    <label for="optionB">
+                                        <span data-title="B"></span>
+                                        <p class="question__text">Lorem ipsum dolor sit amet, dolor dolor sit lorem?</p>
+                                    </label>
+                                </div>
                             </li>
                             <li class="questions__item">
-                                <a class="questions__link" href="#">
-                                    <span class="question__letter">C</span>
-                                    <p class="question__text">Lorem ipsum dolor sit amet, dolor dolor sit lorem?</p>
-                                </a>
+                                <div class="questions__link">
+                                    <input type="radio" name="mode" id="optionC" value="C">
+                                    <label for="optionC">
+                                        <span data-title="C"></span>
+                                        <p class="question__text">Lorem ipsum dolor sit amet, dolor dolor sit lorem?</p>
+                                    </label>
+                                </div>
                             </li>
                         </ul>
 

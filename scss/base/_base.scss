@@ -26,6 +26,8 @@
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
+
+    -webkit-overflow-scrolling: touch;
 }
 
 html {
@@ -34,6 +36,10 @@ html {
     line-height: 1.4;
     overflow-x: hidden;
     height: 100%;
+}
+
+html.blocked {
+    overflow-y: hidden;
 }
 
 body {
@@ -96,7 +102,17 @@ textarea {
 
 .highlighted,
 .securitas-color {
-    color: $securitas-color;
+    color: $primary-color;
+}
+
+input {
+    -webkit-transition: .3s background-color ease-in-out;
+    -ms-transition: .3s background-color ease-in-out;
+    transition: .3s background-color ease-in-out;
+}
+
+input:focus {
+    background-color: $light-grey;
 }
 
 /* ==========================================================================
@@ -125,6 +141,10 @@ ul {
 
 .uppercase {
     text-transform: uppercase;
+}
+
+.underline {
+    text-decoration: underline;
 }
 
 .hidden {

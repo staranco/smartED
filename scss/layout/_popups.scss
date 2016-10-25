@@ -1,82 +1,6 @@
 /* ==========================================================================
-   GENERAL
+   POPUPS
    ========================================================================== */
-
-.container {
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
-.row {
-    display: block;
-    width: 100%;
-    margin: 30px 0; 
-}
-
-.cell {
-    display: block;
-}
-
-.cell__valign_t {
-    vertical-align: top;
-}
-
-.cell__valign_m {
-    vertical-align: middle;
-}
-
-.cell__valign_b {
-    vertical-align: bottom;
-}
-
-/* TABLET SIZE */
-@media all and (min-width: 768px) {
-
-.container {
-    max-width: 1480px;
-    padding: 0 30px;
-}
-}
-
-/* DESKTOP SIZE */
-@media all and (min-width: 1024px) {
-  
-.cell {
-    display: table-cell;
-}
-}
-
-.overlay {
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background: url(../img/darkener.png);
-	z-index: 20;
-	opacity: 0;
-	pointer-events: none;
-	@include transition(.3s all ease-in-out);
-}
-
-.overlay.active {
-	opacity: 1;
-	pointer-events: all;
-}
-
-.main {
-	@include transform(translateX(0));
-	@include transition(.3s transform ease-in-out);
-}
-
-.main.displaced {
-	@include transform(translateX(-240px));
-}
-
-
-/* POPUP */
 
 .mfp-wrap {
     -webkit-overflow-scrolling: touch;
@@ -182,34 +106,35 @@
 
 // Forms 
 
-.form > * {
+.popupform > * {
 	display: block;
 }
 
-.form__label {
+.popupform__label {
 	text-transform: uppercase;
 	font-size: .8em;
 	margin-bottom: 5px;
 	text-align: left;
 }
 
-.form__input {
+.popupform__input {
 	width: 100%;
 	margin-bottom: 20px;
 	padding: 5px;
 	outline: none;
+	border: 1px solid $light-grey;
 }
 
-	.form__input.error {
+	.popupform__input.error {
 		border: 1px solid $red;
 		@include box-shadow( 0px 0px 5px 0px $red);
 	}
 
-.form__message {
+.popupform__message {
 	margin: 0 0 20px 0;
 }
 
-.form__error {
+.popupform__error {
     padding: 20px 0;
     margin: 0 0 20px 0;
     text-transform: uppercase;
@@ -220,7 +145,7 @@
     position: relative;
 }
 
-	.form__error .icon {
+	.popupform__error .icon {
 	    width: 30px;
 	    height: 30px;
 	    background: #E30613;
@@ -236,7 +161,7 @@
 	    border-radius: 50%;
 	}
 
-// Drag and dorp area
+// Dropzone
 
 .popup__dropzone {
 	cursor: pointer;

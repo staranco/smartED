@@ -1,6 +1,6 @@
         <footer class="footer">
             <div class="container footer__container">
-                <p class="footer__text">© <span id="date"></span> Securitas Direct    <a href="#" class="footer__link">Cookies policy</a>   <a href="#" class="footer__link">Privacy policy</a></p>
+                <p class="footer__text">© <span id="date"></span> Securitas Direct    <a href="#" class="footer__link">Cookies </a>   <a href="#" class="footer__link">Privacy policy</a></p>
 
                 <div class="footer__logo"><a href="index.php" title="Securitas Direct"></a></div><!--end of header__logo-->
             </div><!--end of footer__container-->

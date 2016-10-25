@@ -21,6 +21,10 @@
 	color: $medium-grey;
 }
 
+.footer__text #date {
+	display: none;
+}
+
 .footer__link {
 	color: $medium-grey;
 	padding: 10px;
@@ -34,12 +38,12 @@
 
 .footer__logo {
 	position: absolute;
-	background-image: url(../img/logo-securitas-footer.png);
-	width: 79px;
-	height: 50px;
+	background-image: url(../img/logo-verisure-footer.png);
+	width: 119px;
+	height: 38px;
 	background-size: 100%;
 	top: 50%;
-	margin-top: -25px;
+	margin-top: -19px;
 	right: 15px;
 	display: none;
 }
@@ -56,9 +60,9 @@
        only screen and (min-device-pixel-ratio: 1.25),
        only screen and (min-resolution: 1.25dppx) {
 .footer__logo {
-	width: 79px;
-	height: 50px;
-	background-image: url(../img/logo-securitas-footer@2x.png);
+	width: 119px;
+	height: 38px;
+	background-image: url(../img/logo-verisure-footer@2x.png);
 	background-size: 100%;
 	background-repeat: no-repeat;
 }
@@ -70,9 +74,9 @@
        only screen and (min-device-pixel-ratio: 2.25),
        only screen and (min-resolution: 2.25dppx) {
 .footer__logo {
-	width: 79px;
-	height: 50px;
-	background-image: url(../img/logo-securitas-footer@3x.png);
+	width: 119px;
+	height: 38px;
+	background-image: url(../img/logo-verisure-footer@3x.png);
 	background-size: 100%;
 	background-repeat: no-repeat;
 }
@@ -83,6 +87,10 @@
 
 .footer__link {
 	padding: 20px;
+}
+
+.footer__text #date {
+	display: inline-block;
 }
 
 .footer__link:first-of-type {
