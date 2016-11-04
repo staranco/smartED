@@ -5,7 +5,7 @@
             <h3 class="courses__title">Verisure 3.0 online training platform</h3>
 
             <div class="row courses__grid clearfix">
-                <div class="courses__item">
+                <div class="courses__item  animated">
                     <a href="course.php" title="Course Title">
                         <div class="item__img">
                             <div class="item__time"><i class="item__time_icon ion-ios-clock"></i><span  class="item__time_text"_text>40 min</span></div>
@@ -21,9 +21,9 @@
                             </div>
                         </div><!--end of item__info-->
                     </a>
-                </div><!--end of courses__item-->
+                </div><!--end of courses__item  animated-->
 
-                <div class="courses__item">
+                <div class="courses__item  animated">
                     <a href="course.php" title="Course Title">
                         <div class="item__img">
                             <div class="item__time"><i class="item__time_icon ion-ios-clock"></i><span  class="item__time_text"_text>40 min</span></div>
@@ -39,9 +39,9 @@
                             </div>
                         </div><!--end of item__info-->
                     </a>
-                </div><!--end of courses__item-->
+                </div><!--end of courses__item  animated-->
 
-                <div class="courses__item">
+                <div class="courses__item  animated">
                     <a href="course.php" title="Course Title">
                         <div class="item__img">
                             <div class="item__time"><i class="item__time_icon ion-ios-clock"></i><span  class="item__time_text"_text>40 min <span class="left">left</span></span></div>
@@ -56,9 +56,9 @@
                             </div>
                         </div><!--end of item__info-->
                     </a>
-                </div><!--end of courses__item-->
+                </div><!--end of courses__item  animated-->
 
-                <div class="courses__item">
+                <div class="courses__item  animated">
                     <div class="item__enabler"></div>
                     <a href="course.php" title="Course Title">
                         <div class="item__img">
@@ -74,9 +74,9 @@
                             </div>
                         </div><!--end of item__info-->
                     </a>
-                </div><!--end of courses__item-->
+                </div><!--end of courses__item  animated-->
 
-                <div class="courses__item">
+                <div class="courses__item  animated">
                     <div class="item__enabler"></div>
                     <a href="course.php" title="Course Title">
                         <div class="item__img">
@@ -92,9 +92,9 @@
                             </div>
                         </div><!--end of item__info-->
                     </a>
-                </div><!--end of courses__item-->
+                </div><!--end of courses__item  animated-->
 
-                <div class="courses__item">
+                <div class="courses__item  animated">
                     <div class="item__enabler"></div>
                     <a href="course.php" title="Course Title">
                         <div class="item__img">
@@ -110,9 +110,9 @@
                             </div>
                         </div><!--end of item__info-->
                     </a>
-                </div><!--end of courses__item-->
+                </div><!--end of courses__item  animated-->
 
-                <div class="courses__item">
+                <div class="courses__item  animated">
                     <div class="item__enabler"></div>
                     <a href="course.php" title="Course Title">
                         <div class="item__img">
@@ -128,9 +128,9 @@
                             </div>
                         </div><!--end of item__info-->
                     </a>
-                </div><!--end of courses__item-->
+                </div><!--end of courses__item  animated-->
 
-                <div class="courses__item">
+                <div class="courses__item  animated">
                     <div class="item__enabler"></div>
                     <a href="course.php" title="Course Title">
                         <div class="item__img">
@@ -146,7 +146,7 @@
                             </div>
                         </div><!--end of item__info-->
                     </a>
-                </div><!--end of courses__item-->
+                </div><!--end of courses__item  animated-->
             </div><!--end of courses__grid-->
         </div><!--end of courses__container-->
     </section><!--end of courses-->

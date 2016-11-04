@@ -19,6 +19,26 @@
 .button__securitas {
 	color: white;
 	background: $red;
+	@include transition(.3s all ease-in-out);
+	
+	&:visited {
+		color: white;
+		background: $red;
+	}
+	    
+	&:hover  {
+		color: $medium-grey;
+		background: $light-grey;
+	}
+	    
+	&:focus  {
+	    outline: none;
+	}
+	    
+	&:hover,
+	&:active {
+	    outline: 0;
+	}
 }
 
 .button__next {

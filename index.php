@@ -24,22 +24,22 @@
     
     <section class="welcome">
         <div class="container welcome__container">
-            <h3 class="welcome__title">Welcome to Verisure 3.0</h3>
+            <h3 class="welcome__title animated">Welcome to Verisure 3.0</h3>
 
             <div class="row">
                 <div class="cell cell__valign_m">
-                    <div class="video__container">
+                    <div class="video__container animated">
                         <iframe src="https://player.vimeo.com/video/131409111?color=ed1c24&title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                     </div><!--end of video__container-->
                 </div><!--end of cell_middle-->
 
                 <div class="cell cell__valign_m">
-                    <div class="text__container">
+                    <div class="text__container animated">
                         <p>Scale, of out to their have and designers, would, defined one long bold, is rare and on all extended off woman this in we caution our safe to but slight of the frequency incurred secretly bed their self-interest insidious the who a for average money concepts escape, of and or.</p>
                     </div><!--end of text__container-->
                 </div><!--end of cell_middle-->
 
-                <div class="clearfix row__button"><a href="#" class="button button__securitas"><span class="uppercase">Start Learning</span></a></div>
+                <div class="clearfix row__button"><a href="#" class="button button__securitas animated"><span class="uppercase">Start Learning</span></a></div>
             </div><!--end of row-->
         </div><!--end of welcome__container-->
     </section><!--end of welcome-->

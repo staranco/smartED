@@ -202,12 +202,15 @@
 	    display: block;
 	    width: 100%;
 	    cursor: pointer;
+	    position: relative;
 	}
 
 	& input[type="radio"] + label span {
 	    display: inline-block;
 	    vertical-align: middle;
-		position: relative;
+		position: absolute;
+		top: 50%;
+		margin-top: -15px;
 		text-align: center;
 		width: 30px;
 		height: 30px;
@@ -262,7 +265,7 @@
 }
 
 .question__text {
-	padding-left: 15px;
+	padding-left: 50px;
     display: inline-block;
 }
 
@@ -285,6 +288,21 @@
 	margin-top: 0;
 }
 
+.questions__link {
+	& input[type="radio"] + label {
+	    padding: 15px;
+	}
+
+	& input[type="radio"] + label span {
+		position: relative;
+		top: auto;
+		margin-top: auto;
+	}
+}
+
+.question__text {
+	padding-left: 15px;
+}
 }
 
 /* DESKTOP SIZE */

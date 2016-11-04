@@ -220,6 +220,26 @@
     display: table-cell;
     width: 50%;
     color: inherit;
+	background: $white;
+	@include transition(.3s background ease-in-out);
+
+
+	&:visited {
+	    background: $white;
+	}
+	    
+	&:hover  {
+	    background: $raw-white;
+	}
+	    
+	&:focus  {
+	    outline: none;
+	}
+	    
+	&:hover,
+	&:active {
+	    outline: 0;
+	}
 }
 
 .template__buttons a:last-of-type {

@@ -30,10 +30,23 @@
 	padding: 10px;
 	display: inline-block;
 	@include transition(.3s all ease-in-out);
-}
-
-.footer__link:hover {
-	color: $dark-grey;
+	
+	&:visited {
+	    color: $medium-grey;
+	}
+	    
+	&:hover  {
+		color: $dark-grey;
+	}
+	    
+	&:focus  {
+	    outline: none;
+	}
+	    
+	&:hover,
+	&:active {
+	    outline: 0;
+	}
 }
 
 .footer__logo {

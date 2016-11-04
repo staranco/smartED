@@ -124,6 +124,25 @@ $(document).ready(function() {
 
 	// Get date 
 	getDateYear();
+
+	// Show elements on scroll
+	$('.animated').each(function(){
+		if ($(this).visible( true )) {
+			$(this).addClass('visible');	
+		} else {
+			$(this).removeClass('visible');
+		}
+	});
+	
+	$(window).bind('scroll', function() {
+		$('.animated').each(function(){
+			if ($(this).visible( true )) {
+				$(this).addClass('visible');	
+			} else {
+				$(this).removeClass('visible');
+			}
+		});
+	});
 });
 
 /* FUNCTIONS */

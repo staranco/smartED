@@ -31,6 +31,17 @@
     vertical-align: bottom;
 }
 
+.animated {
+    opacity: 0;
+	@include transform(translateY(30px));
+	@include transition(.3s all ease-in-out);
+}
+
+.animated.visible {
+    opacity: 1;
+	@include transform(translateY(0));
+}
+
 /* TABLET SIZE */
 @media all and (min-width: 768px) {
 

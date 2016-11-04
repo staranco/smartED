@@ -76,13 +76,14 @@
 }
 
 .menu__item{
+	margin-right: -4px;
+
 	&.menu__item_home {
 		display: none;
 	}
 
 	&.menu__item_logged {
 		display: inline-block;
-   		;margin-right: -3px;
 
 		&.user {
 			position: relative;
@@ -106,6 +107,26 @@
 	border-left: 1px solid $light-grey;
 	border-right: 1px solid $light-grey;
 	font-size: .9em;
+	background: $white;
+	@include transition(.3s background ease-in-out);
+
+
+	&:visited {
+	    background: $white;
+	}
+	    
+	&:hover  {
+	    background: $raw-white;
+	}
+	    
+	&:focus  {
+	    outline: none;
+	}
+	    
+	&:hover,
+	&:active {
+	    outline: 0;
+	}
 }
 
 #home .menu__link {
