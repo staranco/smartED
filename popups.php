@@ -21,21 +21,24 @@
             <a href="courses.php" class="button button__securitas"><span class="uppercase">Log In</span></a>
         </div><!--end of login--> 
         <div class="popup__content" id="register">
+            <div id="popupform__sucess" class="popupform__sucess">
+                <i class="icon"><img src="img/ico_ok.png"></i>Congratulations! Your registration is now completed!
+            </div><!--end of error-->
             <form id="popupform__register" class="popupform popupform__register" action="../envio/envio.php" method="POST">
                 <div id="popupform__error" class="popupform__error">
                     <i class="icon"><img src="img/ico_alert.png"></i>Please fill in all the fields highlighted in red
                 </div><!--end of error-->
-
+                
                 <label for="popupform__register_name" class="popupform__label" id="popupform__register_name_label">Name</label>
                 <input type="text" class="popupform__input error" name="popupform__register_name" id="popupform__register_name_input" maxlength="29" required="">
 
                 <label for="popupform__register_password" class="popupform__label" id="popupform__register_email_label">Email</label>
                 <input type="email" class="popupform__input" name="popupform__register_email" id="popupform__register_email" maxlength="29" required="">
+
+                <p class="popupform__message"><small>By clicking on the button you accept our <a href="#" class="link">privacy policy</a></small></p>
+
+                <a href="courses.php" class="button button__securitas"><span class="uppercase">Register</span></a>
             </form>
-
-            <p class="popupform__message"><small>By clicking on the button you accept our <a href="#" class="link">privacy policy</a></small></p>
-
-            <a href="courses.php" class="button button__securitas"><span class="uppercase">Register</span></a>
         </div><!--end of register-->  
     </div><!--end of main-->   
 </div><!--end of formPopup-->

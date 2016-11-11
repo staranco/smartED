@@ -3954,7 +3954,8 @@ td, th {
 .popupform__message {
   margin: 0 0 20px 0; }
 
-.popupform__error {
+.popupform__error,
+.popupform__sucess {
   padding: 20px 0;
   margin: 0 0 20px 0;
   text-transform: uppercase;
@@ -3977,6 +3978,23 @@ td, th {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%; }
+
+.popupform__sucess .icon {
+  width: 30px;
+  height: 30px;
+  background: #33cc00;
+  text-align: center;
+  display: inline-block;
+  padding: 5px 0;
+  margin-right: 10px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%; }
+
+.popupform .button {
+  display: inline-block !important; }
 
 .popup__dropzone {
   cursor: pointer;
@@ -4328,7 +4346,7 @@ td, th {
   right: 10px;
   font-size: 3.5em;
   line-height: 0;
-  color: #00ff96; }
+  color: #33cc00; }
 
 .info__title {
   font-family: "Avenir Next LT Bold", Helvetica, sans-serif;
@@ -4469,7 +4487,7 @@ td, th {
   margin-top: 30px; }
 
 .question__messages_correct {
-  color: #00ff96;
+  color: #33cc00;
   font-family: "Avenir Next LT Demi", Helvetica, sans-serif;
   position: relative;
   padding-left: 30px; }
@@ -4558,9 +4576,9 @@ td, th {
   .questions__link input[type="radio"].wrong:checked + label span::before {
     border: 2px solid #ed1c24; }
   .questions__link input[type="radio"].correct:checked + label span {
-    color: #00ff96; }
+    color: #33cc00; }
   .questions__link input[type="radio"].correct:checked + label span::before {
-    border: 2px solid #00ff96; }
+    border: 2px solid #33cc00; }
   .questions__link:hover {
     color: #444;
     background: #eee;

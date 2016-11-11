@@ -134,7 +134,8 @@
 	margin: 0 0 20px 0;
 }
 
-.popupform__error {
+.popupform__error,
+.popupform__sucess {
     padding: 20px 0;
     margin: 0 0 20px 0;
     text-transform: uppercase;
@@ -160,6 +161,26 @@
 	    -o-border-radius: 50%;
 	    border-radius: 50%;
 	}
+
+	.popupform__sucess .icon {
+	    width: 30px;
+	    height: 30px;
+	    background: $color-ok;
+	    text-align: center;
+	    display: inline-block;
+	    padding: 5px 0;
+	    margin-right: 10px;
+
+	    -webkit-border-radius: 50%;
+	    -moz-border-radius: 50%;
+	    -ms-border-radius: 50%;
+	    -o-border-radius: 50%;
+	    border-radius: 50%;
+	}
+
+.popupform .button {
+	display: inline-block !important;
+}
 
 // Dropzone
 
