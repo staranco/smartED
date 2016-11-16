@@ -29,3 +29,29 @@
       -ms-transform: $transform;
           transform: $transform;
 }
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};      
+}
+
+@mixin keyframes($blink) {
+    @-webkit-keyframes #{$blink} {
+        @content;
+    }
+    @-moz-keyframes #{$blink} {
+        @content;
+    }  
+    @-ms-keyframes #{$blink} {
+        @content;
+    }
+    @-o-keyframes #{$blink} {
+        @content;
+    }  
+    @keyframes #{$blink} {
+        @content;
+    }
+}

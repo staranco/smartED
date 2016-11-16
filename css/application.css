@@ -4512,6 +4512,32 @@ td, th {
   top: -3px;
   left: 0; }
 
+.question__messages_check {
+  font-size: .6em;
+  padding: 5px 10px;
+  background: #fbcd0c;
+  color: #fff;
+  -webkit-animation: blink 1s steps(5, start) infinite;
+  -moz-animation: blink 1s steps(5, start) infinite;
+  -ms-animation: blink 1s steps(5, start) infinite;
+  -o-animation: blink 1s steps(5, start) infinite;
+  animation: blink 1s steps(5, start) infinite; }
+
+@-webkit-keyframes blink {
+  to {
+    visibility: hidden; } }
+@-moz-keyframes blink {
+  to {
+    visibility: hidden; } }
+@-ms-keyframes blink {
+  to {
+    visibility: hidden; } }
+@-o-keyframes blink {
+  to {
+    visibility: hidden; } }
+@keyframes blink {
+  to {
+    visibility: hidden; } }
 .test__next {
   position: relative;
   margin-top: 30px; }
@@ -4619,6 +4645,9 @@ td, th {
 @media all and (min-width: 1024px) {
   .course__container {
     padding: 30px; } }
+#finish_test .button__securitas {
+  margin: 0 auto; }
+
 /* ==========================================================================
    FOOTER
    ========================================================================== */

@@ -43,11 +43,11 @@
                         </ul>
                     </div><!--end of content__block-->
 
-                    <div class="content__block active" id="test">
+                    <div class="content__block" id="test">
 
                         <p class="test__indicator">Question <span class="question-number">1</span> of <span class="question-total">10</span></p>
 
-                        <h4 class="test__question">Lorem ipsum dolor sit amet?</h4>
+                        <h4 class="test__question">Lorem ipsum dolor sit amet? <span class="question__messages_check">Checking answer</span></h4>
                         <p class="question__messages"><span class="question__messages_basic">Choose the correct answer</span><span class="question__messages_correct"><i class="icon ion-checkmark-circled"></i>Well done!</span><span class="question__messages_wrong"><i class="icon ion-close-circled"></i>Wrong answer</span></p>
     
                         <ul class="questions__list">
@@ -81,6 +81,12 @@
                         </ul>
 
                         <div class="test__next"><a href="#" class="button button__securitas button__next disabled"><span class="uppercase">Next Question</span></a></div>
+                    </div><!--end of content__block-->
+
+                    <div class="content__block active" id="finish_test">
+                        <p class="text-align-center">Well done, Jane Doe</p>
+                        <h3 class="text-align-center">You have achieved the end of this course.</h3>
+                        <div class="clearfix row__button text-align-center"><a href="#" class="button button__securitas"><span class="uppercase">Continue Learning</span></a></div>
                     </div><!--end of content__block-->
                 </div><!--end of tabs__content-->
             </div><!--end of course__tabs-->

@@ -178,6 +178,20 @@
 	    left: 0;
 	}
 
+.question__messages_check {
+	font-size: .6em;
+	padding: 5px 10px;
+	background: $yellow;
+	color: $white;
+  	@include animation('blink 1s steps(5, start) infinite');
+}
+
+@include keyframes(blink) {
+  to {
+    visibility: hidden;
+  }
+}
+
 .test__next {
 	position: relative;
 	margin-top: 30px;
@@ -312,4 +326,8 @@
 	padding: 30px;
 }
 
+}
+
+#finish_test .button__securitas {
+	margin: 0 auto;
 }
