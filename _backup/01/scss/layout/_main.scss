@@ -1,0 +1,40 @@
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+
+.main {
+	position: relative;
+	height: 100%;
+  width: calc(100% - 280px);
+	background: #fff;
+  overflow: hidden;
+}
+
+/* @2x Images */   
+@media only screen and (-o-min-device-pixel-ratio: 5/4),
+       only screen and (-webkit-min-device-pixel-ratio: 1.25),
+       only screen and (min-device-pixel-ratio: 1.25),
+       only screen and (min-resolution: 1.25dppx) {
+
+}
+
+/* @3x Images */
+@media only screen and (-o-min-device-pixel-ratio: 9/4),
+       only screen and (-webkit-min-device-pixel-ratio: 2.25),
+       only screen and (min-device-pixel-ratio: 2.25),
+       only screen and (min-resolution: 2.25dppx) {
+
+}
+
+
+/* TABLET SIZE */
+@media all and (min-width: 768px) {
+  .main {
+    width: calc(100% - 370px);
+  }
+}
+
+/* DESKTOP SIZE */
+@media all and (min-width: 1025px) {
+
+}

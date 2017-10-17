@@ -1,0 +1,36 @@
+/* ==========================================================================
+   Variables
+   ========================================================================== */
+
+// Descrptive color variables
+
+$white              : #fff;
+$white-transparent	: rgba(255, 255, 255, .6);
+$raw-white			: #f7f7f7;
+$black              : #000;
+$black-transparent	: rgba(0, 0, 0, .6);
+$light-grey			: #eee;
+$medium-grey		: #7d7d7d;
+$dark-grey			: #444;
+$red				: #ed1c24;
+$green				: #33cc00;
+$yellow				: #fbcd0c;
+$swimming-pool		: #3bd4ba;
+
+// Functional color variables
+
+$selection-color    : $swimming-pool;
+$color-wrong		: $red;
+$color-ok			: $green;
+$color-alert		: $yellow;
+
+// Font Stacks
+
+$stack-sans-serif 			: Helvetica, sans-serif;
+$stack-quattrocento-serif 	: 'Quattrocento', serif;
+$stack-quattrocento-sans 	: 'Quattrocento Sans', sans-serif;
+$stack-ionicons				: "Ionicons";
+
+$primal-fontstack 		: $stack-quattrocento-sans;
+$special-fontstack 		: $stack-quattrocento-serif;
+$icons-fontstack		: $stack-ionicons;

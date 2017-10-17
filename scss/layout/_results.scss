@@ -1,0 +1,99 @@
+/* ==========================================================================
+   RESULTS
+   ========================================================================== */
+
+.dictionary {
+  position: relative;
+  overflow: scroll;
+  display: block;
+  height: 100%;
+}
+
+.initial__display {
+  position: fixed;
+  top: 130px;
+  left: 30px;
+  width: 30px;
+  height: 30px;
+}
+
+.initial__display__background {
+  background: $selection-color;
+  opacity: .1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  @include border-radius(100%);
+}
+
+.initial__display__letter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: "Quattrocento", serif;
+  font-size: 1em !important;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 0;
+  @include transform(translateX(-50%));
+}
+
+.results__container {
+    padding: 120px;
+}
+
+.results__letter {
+  opacity: .5;
+  @include transition(.3s all ease-in-out);
+}
+
+.results__letter.cur {
+  opacity: 1;
+}
+
+.results__article {
+  margin-bottom: 60px;
+}
+
+.results__article.cur {
+  color: red;
+}
+
+.results__letter:last-child .results__article {
+  margin-bottom: 0;
+}
+
+.article__header {
+  font-family: $special-fontstack;
+  font-size: 24px;
+}
+
+.article__specs {
+  font-family: $special-fontstack;
+  font-size: 18px;
+  color: $primary-color;
+}
+
+/* @2x Images */   
+@media only screen and (-o-min-device-pixel-ratio: 5/4),
+       only screen and (-webkit-min-device-pixel-ratio: 1.25),
+       only screen and (min-device-pixel-ratio: 1.25),
+       only screen and (min-resolution: 1.25dppx) {
+}
+
+/* @3x Images */
+@media only screen and (-o-min-device-pixel-ratio: 9/4),
+       only screen and (-webkit-min-device-pixel-ratio: 2.25),
+       only screen and (min-device-pixel-ratio: 2.25),
+       only screen and (min-resolution: 2.25dppx) {
+}
+
+
+/* TABLET SIZE */
+@media all and (min-width: 768px) {
+}
+
+/* DESKTOP SIZE */
+@media all and (min-width: 1025px) {
+}

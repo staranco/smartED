@@ -18,20 +18,21 @@ $yellow				: #fbcd0c;
 
 // Functional color variables
 
-$primary-color		: $red;
-$selection-color    : $light-grey;
-$color-ok			: $green;
-$color-alert		: $yellow;
+$primary-color    		: #002FA7;
+$primary-color-light    : #003ace;
+$primary-color-dark    	: #00288f;
+$selection-color    	: #F7CE3E;
+$color-wrong			: $red;
+$color-ok				: $green;
+$color-alert			: $yellow;
 
 // Font Stacks
 
-$stack-sans-serif 		: Helvetica, sans-serif;
-$stack-avenir-regular 	: 'Avenir Next LT Regular', $stack-sans-serif;
-$stack-avenir-demi 		: 'Avenir Next LT Demi', $stack-sans-serif;
-$stack-avenir-bold 		: 'Avenir Next LT Bold', $stack-sans-serif;
-$stack-ionicons			: "Ionicons";
+$stack-sans-serif 			: Helvetica, sans-serif;
+$stack-quattrocento-serif 	: 'Quattrocento', serif;
+$stack-quattrocento-sans 	: 'Quattrocento Sans', sans-serif;
+$stack-ionicons				: "Ionicons";
 
-$primal-fontstack 		: $stack-avenir-regular;
-$titles-fontstack 		: $stack-avenir-regular;
-$bold-fontstack 		: $stack-avenir-bold;
+$primal-fontstack 		: $stack-quattrocento-sans;
+$special-fontstack 		: $stack-quattrocento-serif;
 $icons-fontstack		: $stack-ionicons;

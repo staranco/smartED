@@ -5,53 +5,33 @@
 .button {
 	position: relative;
 	text-align: center;
-	padding: 15px 30px;
-	font-family: $bold-fontstack; 
+	padding: 11px 16px;
+	font-family: $primal-fontstack; 
 	display: inline-block;
-}
+	text-transform: uppercase;
+	border-radius: 2px;
+	border: none;
+	outline: none;
+	font-size: 13px;
+	color: $raw-white;
 
-.button.disabled {
-	color: white;
-	background: $light-grey !important;
-	pointer-events: none;
-}
-
-.button__securitas {
-	color: white;
-	background: $red;
-	@include transition(.3s all ease-in-out);
+	background: $primary-color;
 	
-	&:visited {
-		color: white;
-		background: $red;
-	}
-	    
-	&:hover  {
-		color: $medium-grey;
-		background: $light-grey;
-	}
-	    
-	&:focus  {
-	    outline: none;
-	}
-	    
-	&:hover,
-	&:active {
-	    outline: 0;
-	}
+	@include transition(.3s all ease-in-out);
 }
 
-.button__next {
-	position: relative;
-    padding-right: 60px;
+.button:hover {
+	background: $primary-color-light;
+}
 
-	&::before {
-		font-family: $icons-fontstack;
-		content: "\f3d6";
-		font-size: 2em;
-		position: absolute;
-		right: 30px;
-		top: 50%;
-		margin-top: -24px;
-	}
+.button:active {
+	background: $primary-color-dark;
+}
+
+.button:disabled {
+	background: $light-grey;
+}
+
+a.link {
+	color: $primary-color;
 }

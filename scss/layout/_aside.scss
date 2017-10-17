@@ -1,0 +1,114 @@
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+
+.aside {
+  position: absolute;
+  top: 0;
+  right: 0;
+	width: 280px;
+  height: 100%;
+	background: #fafafa;
+	border-left: 1px solid #e1e1e1;
+}
+
+.aside__header {
+  position: relative;
+  height: 60px;
+  text-align: center;
+}
+
+.aside__header:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.aside__header__title {
+  font-family: $primal-fontstack;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.aside__body {
+  position: absolute;
+  height: calc(100% - 60px); /* total height minus heigt of aside header */
+  padding: 10px;
+  overflow-y: scroll;
+}
+
+.user__settings {
+  display: table;
+  width: 100%;
+}
+
+.user__settings__image {
+  position: relative;
+  display: table-cell;
+  width: 30%;
+  height: 100px;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.user__settings__image img {
+  position: absolute;
+  display: inline-block;
+  vertical-align: middle;
+  top: 0;
+  width: 100px;
+  height: 100px;
+  @include border-radius(100%);
+}
+
+.user__settings__information {
+  display: table-cell;
+  width: 70%;
+  vertical-align: top;
+  padding: 10px;
+  font-size: .8em;
+}
+
+.user__settings__name,
+.user__settings__email {
+  padding: 0;
+  margin: 0;
+}
+
+.user__settings__link {
+  clear: both;
+  display: block;
+}
+
+
+/* @2x Images */   
+@media only screen and (-o-min-device-pixel-ratio: 5/4),
+       only screen and (-webkit-min-device-pixel-ratio: 1.25),
+       only screen and (min-device-pixel-ratio: 1.25),
+       only screen and (min-resolution: 1.25dppx) {
+
+}
+
+/* @3x Images */
+@media only screen and (-o-min-device-pixel-ratio: 9/4),
+       only screen and (-webkit-min-device-pixel-ratio: 2.25),
+       only screen and (min-device-pixel-ratio: 2.25),
+       only screen and (min-resolution: 2.25dppx) {
+
+}
+
+
+/* TABLET SIZE */
+@media all and (min-width: 768px) {
+  .aside {
+    width: 370px;
+  }
+}
+
+/* DESKTOP SIZE */
+@media all and (min-width: 1025px) {
+
+}

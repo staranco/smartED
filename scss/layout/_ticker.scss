@@ -1,0 +1,113 @@
+/* ==========================================================================
+   TICKER
+   ========================================================================== */
+
+.ticker {
+    z-index: 8;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 60px;
+    background-color: #fff;
+    border-left: 1px solid #EBEBEB;
+    text-align: left;
+}
+
+.ticker__band {
+    height: 100%;
+    overflow: visible;
+    position: relative;
+    transition: -webkit-transform 0.25s;
+    transition: transform 0.25s;
+    transition: transform 0.25s, -webkit-transform 0.25s;
+    padding: calc(50vh - (131px / 2)) 0; // height of tickers and header
+}
+
+.ticker__highlight {
+    position: absolute;
+    z-index: 1;
+    top: calc(50% - 2px);
+    right: 0;
+    height: 3px;
+    width: 16px;
+    background-color: #F7CE3E;
+}
+
+.ticker__token {
+    font-family: $primal-fontstack;
+    font-size: 13px;
+    line-height: 1.5;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.1536em;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 1;
+    height: 72px;
+    display: block;
+    position: relative;
+    color: rgba(0, 0, 0, 0.9);
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    background-image: url(../img/ticker_bg.svg);
+    background-size: 15px 73px;
+    background-repeat: no-repeat;
+    background-position: right top;
+    opacity: 0.2;
+}
+
+.ticker__token:first-child {
+    background-position: right 36px;
+}
+
+.ticker__token:last-child {
+  background-position: right -36px;
+}
+
+.ticker__token.loaded {
+  opacity: 1;
+}
+
+.ticker__token:hover {
+  background-color: #e9efff;
+}
+
+.ticker__token:focus {
+  outline: none;
+}
+
+.ticker__token__letter {
+    position: absolute;
+    top: 32px;
+    left: 9px;
+}
+
+/* @2x Images */   
+@media only screen and (-o-min-device-pixel-ratio: 5/4),
+       only screen and (-webkit-min-device-pixel-ratio: 1.25),
+       only screen and (min-device-pixel-ratio: 1.25),
+       only screen and (min-resolution: 1.25dppx) {
+}
+
+/* @3x Images */
+@media only screen and (-o-min-device-pixel-ratio: 9/4),
+       only screen and (-webkit-min-device-pixel-ratio: 2.25),
+       only screen and (min-device-pixel-ratio: 2.25),
+       only screen and (min-resolution: 2.25dppx) {
+}
+
+
+/* TABLET SIZE */
+@media all and (min-width: 768px) {
+}
+
+/* DESKTOP SIZE */
+@media all and (min-width: 1025px) {
+}

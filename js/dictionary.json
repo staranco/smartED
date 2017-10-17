@@ -1,0 +1,22 @@
+var dictionary = '{
+  "words": [
+    {
+      "word": "aquelarre",
+      "meanings":{
+        "1": "meaning 1",
+        "2": "meaning 2",
+        "3": "meaning 3"
+      },
+      "etymology": "etymology 1"
+    },
+    {
+      "word": "diafano",
+      "meanings":{
+        "1": "meaning 1",
+        "2": "meaning 2",
+        "3": "meaning 3"
+      },
+      "etymology": "etymology 2"
+    }
+  ]
+}'

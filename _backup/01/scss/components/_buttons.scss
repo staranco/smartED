@@ -1,0 +1,57 @@
+/* ==========================================================================
+   BUTTONS
+   ========================================================================== */
+
+.button {
+	position: relative;
+	text-align: center;
+	padding: 15px 30px;
+	font-family: $special-fontstack; 
+	display: inline-block;
+}
+
+.button.disabled {
+	color: white;
+	background: $light-grey !important;
+	pointer-events: none;
+}
+
+.button__securitas {
+	color: white;
+	background: $red;
+	@include transition(.3s all ease-in-out);
+	
+	&:visited {
+		color: white;
+		background: $red;
+	}
+	    
+	&:hover  {
+		color: $medium-grey;
+		background: $light-grey;
+	}
+	    
+	&:focus  {
+	    outline: none;
+	}
+	    
+	&:hover,
+	&:active {
+	    outline: 0;
+	}
+}
+
+.button__next {
+	position: relative;
+    padding-right: 60px;
+
+	&::before {
+		font-family: $icons-fontstack;
+		content: "\f3d6";
+		font-size: 2em;
+		position: absolute;
+		right: 30px;
+		top: 50%;
+		margin-top: -24px;
+	}
+}
