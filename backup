@@ -1,3 +1,45 @@
+{
+  "letters": {
+    "A": [
+      {"word": [
+        {"wordname": "aquelarre"},
+        {"etymology": "etymology aquelarre"},
+        {"meanings": [
+          {"meaning": "meaning aquelarre 1"},
+          {"meaning": "meaning aquelarre 2"}
+        ]}
+      ]},
+      {"word": [
+        {"wordname": "ambigüo"},
+        {"etymology": "etymology ambigüo"},
+        {"meanings": [
+          {"meaning": "meaning ambigüo 1"},
+          {"meaning": "meaning ambigüo 2"}
+        ]}
+      ]}],
+    "D": [
+      {"word": [
+        {"wordname": "diáfano"},
+        {"etymology": "etymology diáfano"},
+        {"meanings": [
+          {"meaning": "meaning diáfano 1"},
+          {"meaning": "meaning diáfano 2"}
+        ]}
+      ]},
+      {"word": [
+        {"wordname": "desigual"},
+        {"etymology": "etymology desigual"},
+        {"meanings": [
+          {"meaning": "meaning desigual 1"},
+          {"meaning": "meaning desigual 1"}
+        ]}
+      ]}]
+  }
+}
+
+
+
+
 "use strict";
 
 window.onload = function() {
@@ -142,25 +184,42 @@ $(document).ready(function() {
 
 // Display words
 $.getJSON( "./js/dictionary.json", function(data) {
-  var dictionary = [];
-  $.each(data.dictionary, function(i, item) {
-    dictionary.push(data.dictionary[i])
-  })
-  var d;
-  for(d = 0; d <= dictionary.length; d ++) {
-    var letterSection = $('<section/>', {
-      'class': 'results__letter',
-      'id': Object.keys(dictionary[d])
-    }).appendTo('.results__container');
-    $.each(dictionary[d], function(i, item) {
-      var words = Object.values(dictionary[d][i]);
+  var letters = [];
+  $.each(data.letters, function(i, item) {
+    letters.push(data.letters[i]);
+
+    var l;
+    for(l = 0; l < letters.length; l ++) {
+      var letterSection = $('<section/>', {
+        'class': 'results__letter',
+        'id': data.letters[i]
+      }).appendTo('.results__container');
+      console.log(letters[l]);
+    }
+
+
+    var words = [];
+    $.each(letters.word, function(j, item) {
+      words.push(letters.word[j]);
       var w;
-        console.log(Object.keys(words[0]))
-
+      for(w = 0; w < words.length; w ++) {
+        var word = words[w];
+      }
+      var meanings = [];
+      $.each(word.meanings, function(h, item) {
+        meanings.push('<li class="article__definition">' + word.meanings[h] + '</li>');
+      });
+      var article = $('<article/>', {
+        'class': 'results__article',
+        'data-letter': word.word.charAt(0),
+        html: (
+          '<header class="article__header">' + word.word + '</header>' +
+          '<p class="article__specs">'+ word.etymology + '</header><br/>' +
+          '<ul class="article__definitions">' + meanings.join('') + '</ul>')
+        }).appendTo('.results__letter');
+      })
     })
-  }
-
-}).done(function() {}).fail(function() {}).always(function() {});
+  }).done(function() {}).fail(function() {}).always(function() {});
 
 /* FUNCTIONS */
 function getInitialLetter() {
@@ -169,3 +228,33 @@ function getInitialLetter() {
 		$("#initial__display__letter").text(initialLetter);
 	});
 }
+
+
+
+
+$.getJSON( "./js/dictionary.json", function(data) {
+  var dictionary = [];
+  $.each(data.dictionary, function(i, item) {
+    dictionary.push(data.dictionary[i])
+  })
+  var d;
+  for(d = 0; d < dictionary.length; d ++) {
+    var letterSection = $('<section/>', {
+      'class': 'results__letter',
+      'id': Object.keys(dictionary[d])
+    }).appendTo('.results__container');
+
+    var letters = dictionary[d];
+    var words = [];
+    $.each(letters, function(i, item) {
+      words.push(letters[i]);
+      var w;
+      for(w = 0; w < words.length; w ++) {
+        $.each(words[w], function(i, item) {
+          console.log(words[w][i])
+        })
+      }
+    })
+  }
+
+}).done(function() {}).fail(function() {}).always(function() {});

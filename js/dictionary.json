@@ -1,22 +1,11 @@
-var dictionary = '{
-  "words": [
-    {
-      "word": "aquelarre",
-      "meanings":{
-        "1": "meaning 1",
-        "2": "meaning 2",
-        "3": "meaning 3"
-      },
-      "etymology": "etymology 1"
-    },
-    {
-      "word": "diafano",
-      "meanings":{
-        "1": "meaning 1",
-        "2": "meaning 2",
-        "3": "meaning 3"
-      },
-      "etymology": "etymology 2"
-    }
+{
+  "dictionary": [
+    {"A": [
+      {"aquelarre": ["1aquelarre", "2aquelarre"]},
+      {"ambigüo": ["1ambigüo", "2ambigüo"]}]},
+    {"D": [
+      {"dubitativo": ["1dubitativo", "2dubitativo"]},
+      {"diáfano": ["1diáfano", "2diáfano"]},
+      {"demencial": ["1demencial", "2demencial"]}]}
   ]
-}'
+}

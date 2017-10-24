@@ -15,8 +15,7 @@
                     </div>
 
                     <div class="results__container">
-                        <section id="section_letter-a" class="results__letter cur">
-                            <p id="hola"></p>
+                        <!--<section id="section_letter-a" class="results__letter cur">
                             <article class="results__article" data-letter="a">
                                 <header class="article__header">aquelarre</header>
                                 <p class="article__specs">Del vasco <i> akelarre</i>; propiamente 'prado del macho cabrío'.</p>
@@ -93,7 +92,7 @@
                                     <li class="article__definition">m. Descuido de algo que se debía tener presente.</li>
                                 </ul>
                             </article>
-                        </section>
+                        </section>-->
                     </div><!-- end of results__container -->
                 </div><!-- end of results -->
 
