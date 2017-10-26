@@ -14,86 +14,7 @@
                         <p id="initial__display__letter" class="initial__display__letter">A</p>
                     </div>
 
-                    <div class="results__container">
-                        <!--<section id="section_letter-a" class="results__letter cur">
-                            <article class="results__article" data-letter="a">
-                                <header class="article__header">aquelarre</header>
-                                <p class="article__specs">Del vasco <i> akelarre</i>; propiamente 'prado del macho cabrío'.</p>
-                                <ul class="article__definitions">
-                                    <li class="article__definition">m. Junta o reunión nocturna de brujos y brujas, con la supuesta intervención del demonio ordinariamente en figura de macho cabrío, para sus prácticas mágicas o supersticiosas.</li>
-                                </ul>
-                            </article>
-                        </section>
-
-                        <section id="section_letter-d" class="results__letter">
-                            <article class="results__article" data-letter="d">
-                                <header class="article__header">diáfano, na</header>
-                                <p class="article__specs">Del lat. mediev. <i>diaphanus</i>, y este del gr. <i>διαφανής</i> <i>diaphanḗs</i> 'transparente'.</p>
-                                <ul class="article__definitions">
-                                    <li class="article__definition">adj. Dicho de un cuerpo: Que deja pasar a su través la luz casi en su totalidad.</li>
-                                    <li class="article__definition">adj. claro (‖ que se percibe bien). Una luz diáfana. Un lenguaje diáfano.</li>
-                                    <li class="article__definition">adj. Dicho de un espacio: Despejado, o que carece de obstáculos o separaciones. Una sala diáfana.</li>
-                                </ul>
-                            </article>
-                        </section>
-
-                        <section id="section_letter-e" class="results__letter">
-                            <article class="results__article" data-letter="e">
-                                <header class="article__header">epifanía</header>
-                                <p class="article__specs">Del lat. tardío <i>epiphanīa</i>, y este del gr. <i>ἐπιφάνεια</i> epipháneia.</p>
-                                <ul class="article__definitions">
-                                    <li class="article__definition">f. Manifestación, aparición o revelación.</li>
-                                    <li class="article__definition">f. Festividad que celebra la Iglesia católica el día 6 de enero, en conmemoración de la adoración de los Reyes Magos.</li>
-                                </ul>
-                            </article>
-                        </section>
-
-                        <section id="section_letter-f" class="results__letter">
-                            <article class="results__article" data-letter="f">
-                                <header class="article__header">filigrana</header>
-                                <p class="article__specs">Del it. <i>filigrana.</i></p>
-                                <ul class="article__definitions">
-                                    <li class="article__definition">f. Obra formada de hilos de oro y plata, unidos y soldados con mucha perfección y delicadeza.</li>
-                                    <li class="article__definition">f. Señal o marca transparente hecha en el papel al tiempo de fabricarlo.</li>
-                                    <li class="article__definition">f. Cosa delicada y pulida.</li>
-                                    <li class="article__definition">f. Cuba. Arbusto silvestre, de la familia de las verbenáceas, con hojas ásperas, aromáticas, aovadas, de bordes ondulados, flor menuda y fruto apiñado.</li>
-                                </ul>
-                            </article>
-                        </section>
-
-                        <section id="section_letter-i" class="results__letter">
-                            <article class="results__article" data-letter="i">
-                                <header class="article__header">inefable</header>
-                                <p class="article__specs">Del lat. mediev. <i>ineffabĭlis</i> 'indecible'.</p>
-                                <ul class="article__definitions">
-                                    <li class="article__definition">adj. Que no se puede explicar con palabras.</li>
-                                </ul>
-                            </article>
-                        </section>
-
-                        <section id="section_letter-m" class="results__letter">
-                            <article class="results__article" data-letter="m">
-                                <header class="article__header">melifluo, a</header>
-                                <p class="article__specs">Del lat. <i>mellifluus</i>'que destila miel'.</p>
-                                <ul class="article__definitions">
-                                    <li class="article__definition">adj. Que tiene miel o es parecido a ella en sus propiedades.</li>
-                                    <li class="article__definition">adj. Dulce, suave, delicado y tierno en el trato o en la manera de hablar. U. m. en sent. peyor.</li>
-                                </ul>
-                            </article>
-                        </section>
-
-                        <section id="section_letter-o" class="results__letter">
-                            <article class="results__article" data-letter="o">
-                                <header class="article__header">olvido</header>
-                                <p class="article__specs">De olvidar.</p>
-                                <ul class="article__definitions">
-                                    <li class="article__definition">m. Cesación de la memoria que se tenía.</li>
-                                    <li class="article__definition">m. Cesación del afecto que se tenía.</li>
-                                    <li class="article__definition">m. Descuido de algo que se debía tener presente.</li>
-                                </ul>
-                            </article>
-                        </section>-->
-                    </div><!-- end of results__container -->
+                    <div class="results__container"></div><!-- end of results__container -->
                 </div><!-- end of results -->
 
                 <div class="letters__bar">
@@ -102,7 +23,7 @@
                             <span class="ticker__highlight"></span>
 
                             <div class="ticker__band">
-                                <a href="#section_letter-a" data-letter="A" class="ticker__token loaded">
+                                <a href="#section_letter-a" data-letter="a" class="ticker__token loaded">
                                     <span class="ticker__token__letter">A</span>
                                 </a>
 
