@@ -144,9 +144,9 @@ $(document).ready(function() {
 $.getJSON( "./js/dictionary.json", function(data) {
   var dictionary = data.dictionary;
   var d;
-  for(d = 0; d <= dictionary.length; d ++) {
+  for(d = 0; d < dictionary.length; d ++) {
     var letters = dictionary[d];
-    var letterSectionId = Object.keys(letters);
+    var letterSectionId = (Object.keys(letters)).toString();
     var letterSection = $('<section/>', {
       'class': 'results__letter',
       'id': 'section_letter-' + letterSectionId
@@ -160,13 +160,13 @@ $.getJSON( "./js/dictionary.json", function(data) {
         var wordName = Object.values(word[0]).toString();
         var wordEtymology = Object.values(word[1]).toString();
         //To do: show word meanings
-        /*var wordMeanings = Object.values(word[2]);
+        var wordMeanings = Object.values(word[2]);
         var m;
         for(m = 0; m < wordMeanings.length; m ++) {
           var meaningEntry = $('<li/>', {
             'class': 'article__definition'
           }).appendTo('.article__definitions');
-        }*/
+        }
         var wordArticle = $('<article/>', {
           'class': 'results__article',
           'data-letter': letterSectionId,
