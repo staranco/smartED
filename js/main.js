@@ -142,21 +142,38 @@ $(document).ready(function() {
 
 // Display words
 $.getJSON( "./js/dictionary.json", function(data) {
-  var dictionary = [];
-  $.each(data.dictionary, function(i, item) {
-    dictionary.push(data.dictionary[i])
-  })
+  var dictionary = data.dictionary;
   var d;
   for(d = 0; d <= dictionary.length; d ++) {
+    var letters = dictionary[d];
+    var letterSectionId = Object.keys(letters);
     var letterSection = $('<section/>', {
       'class': 'results__letter',
-      'id': Object.keys(dictionary[d])
+      'id': 'section_letter-' + letterSectionId
     }).appendTo('.results__container');
-    $.each(dictionary[d], function(i, item) {
-      var words = Object.values(dictionary[d][i]);
-      var w;
-        console.log(Object.keys(words[0]))
 
+    $.each(letters, function(i, item) {
+      var words = Object.values(letters[i]);
+      var w;
+      for(w = 0; w < words.length; w ++) {
+        var word = Object.values(words[w])[0];
+        var wordName = Object.values(word[0]).toString();
+        var wordEtymology = Object.values(word[1]).toString();
+        //To do: show word meanings
+        /*var wordMeanings = Object.values(word[2]);
+        var m;
+        for(m = 0; m < wordMeanings.length; m ++) {
+          var meaningEntry = $('<li/>', {
+            'class': 'article__definition'
+          }).appendTo('.article__definitions');
+        }*/
+        var wordArticle = $('<article/>', {
+          'class': 'results__article',
+          'data-letter': letterSectionId,
+          html: (
+            '<header class="article__header">' + wordName + '</header><p class="article__specs">' + wordEtymology + '</p><ul class="article__definitions" />')
+        }).appendTo('.results__letter#section_letter-' + letterSectionId);
+      }
     })
   }
 

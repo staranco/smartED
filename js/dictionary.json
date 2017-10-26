@@ -1,11 +1,28 @@
 {
   "dictionary": [
     {"A": [
-      {"aquelarre": ["1aquelarre", "2aquelarre"]},
-      {"ambigüo": ["1ambigüo", "2ambigüo"]}]},
+      {"aquelarre": [
+        {"wordname": "aquelarre"},
+        {"etymology": "Del vasco akelarre; propiamente 'prado del macho cabrío'."},
+        {"meanings": [
+          "m. Junta o reunión nocturna de brujos y brujas, con la supuesta intervención del demonio ordinariamente en figura de macho cabrío, para sus prácticas mágicas o supersticiosas."
+          ]}]}]},
     {"D": [
-      {"dubitativo": ["1dubitativo", "2dubitativo"]},
-      {"diáfano": ["1diáfano", "2diáfano"]},
-      {"demencial": ["1demencial", "2demencial"]}]}
+      {"diáfano": [
+        {"wordname": "diáfano"},
+        {"etymology": "Del lat. mediev. diaphanus, y este del gr. διαφανής diaphanḗs 'transparente'."},
+        {"meanings": [
+          "adj. Dicho de un cuerpo: Que deja pasar a su través la luz casi en su totalidad.",
+          "adj. claro (‖ que se percibe bien). Una luz diáfana. Un lenguaje diáfano.",
+          "adj. Dicho de un espacio: Despejado, o que carece de obstáculos o separaciones. Una sala diáfana."
+          ]}]}]},
+      {"E": [
+        {"epifanía": [
+          {"wordname": "epifanía"},
+          {"etymology": "Del lat. tardío epiphanīa, y este del gr. ἐπιφάνεια epipháneia."},
+          {"meanings": [
+            "f. Manifestación, aparición o revelación.",
+            "f. Festividad que celebra la Iglesia católica el día 6 de enero, en conmemoración de la adoración de los Reyes Magos."
+            ]}]}]}
   ]
 }
